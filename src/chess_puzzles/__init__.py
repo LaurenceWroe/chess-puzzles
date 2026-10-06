@@ -1,4 +1,4 @@
-"""Epoch AI Chess Puzzles benchmark, reproduced as an Inspect task."""
+"""A reproduction of the Chess Puzzles benchmark as an Inspect AI task."""
 
 from .chess_eval import chess_puzzles, model_extracted_exact_match
 
