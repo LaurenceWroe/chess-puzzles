@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "epoch-chess-puzzles"
+version = "0.1.0"
+description = "Epoch AI Chess Puzzles benchmark (100 FEN best-move items), reproduced as an Inspect AI task"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["inspect-ai>=0.3.146"]
+
+[project.entry-points.inspect_ai]
+epoch_chess_puzzles = "epoch_chess_puzzles._registry"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/epoch_chess_puzzles"]
